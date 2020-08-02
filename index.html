@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio1</title>
+    <link rel="stylesheet" href="./style.css">
+    <script stype="text/javascript" src="./javascript.js"></script>
+
+</head>
+
+<body>
+    <h1>Formulario de Reserva de Horas</h1>
+    <form class="form-register" onsubmit="return validar();">
+        <div class="contenedor-inputs">
+
+            <p>Rut formato 11.1111.1111-K</p>
+            <input type="text" id="rut" name="rut" placeholder="Rut" class="inputcss">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="inputcss">
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="inputcss">
+
+            <input type="number" id="edad" name="edad" placeholder="Edad" class="inputcss">
+
+
+            <input type="email" id="correo" name="correo" placeholder="Correo" class="inputcss">
+
+
+            <input list="especialidades" placeholder="Especialidad" class="inputcss">
+            <datalist id="especialidades">
+                <option value="Salud mental">
+                <option value="Covid-19">
+                <option value="Pediatria">
+                <option value="Medicina General">
+            </datalist>
+            <p>Fecha formato dd/mm/aaaa</p>
+            <input type="text" id="fecha" name="fecha" placeholder="Fecha" class="inputcss">
+            <p>Hora</p>
+            <input type="time" id="hora" name="hora" placeholder="Hora" class="inputcss">
+
+            <input type="submit" value="Reservar" class="btn-enviar pointer">
+            <div>
+                <h3 id="resultado"></h3>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
